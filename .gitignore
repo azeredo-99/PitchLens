@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Data never goes into git (ADR 0004). Test fixtures live in tests/fixtures/.
+data/
+*.duckdb
+*.duckdb.wal
+*.parquet
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Secrets (copy .env.example to .env)
+.env
+.env.*
+!.env.example
+
+# Node (web/ from phase 3)
+node_modules/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
